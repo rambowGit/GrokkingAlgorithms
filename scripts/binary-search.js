@@ -1,7 +1,9 @@
-// const numberArray = [1, 3, 5, 7, 9];
-const stringArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
-
-function binarySearch(sortedArray, key) {
+/**
+ * @param {*} sortedArray an array in which we are looking for an element
+ * @param {*} key search item
+ * @returns index of key in sortedArray, or -1 if nothing found
+ */
+export default function binarySearch(sortedArray, key) {
     let start = 0;
     let end = sortedArray.length - 1;
 
@@ -22,6 +24,3 @@ function binarySearch(sortedArray, key) {
     // key wasn't found
     return -1;
 }
-
-const result = binarySearch(stringArray, 'g');
-console.log(result);
